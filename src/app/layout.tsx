@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
 
         <div className="border-b">
-          <div className="flex h-16 items-center px-4 container mx-auto">
+          <div className="flex h-16 items-center px-4 mx-auto">
             PHOTOS APP
             <div className="ml-auto flex items-center space-x-4">
               <Avatar>
@@ -33,7 +33,7 @@ export default function RootLayout({
         </div>
         <div className='flex'>
           <SideBar />
-          <div>{children}</div>
+          <div className='w-full px-4 pt-6'>{children}</div>
         </div>
 
       </body>

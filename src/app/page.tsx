@@ -14,12 +14,12 @@ export default function Home() {
 
       {imageId && (
         <CldImage
-        width="960"
-        height="600"
-        src={imageId}
-        sizes="100vw"
-        alt="Description of my image"
-      />
+          width="960"
+          height="600"
+          src={imageId}
+          sizes="100vw"
+          alt="Description of my image"
+        />
       )
       }
     </div>
