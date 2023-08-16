@@ -11,8 +11,8 @@ export default async function GalleryPage() {
     .expression('resource_type:image')
     .sort_by('created_at', 'desc')
     .max_results(1)
-    .execute() as { resources: SearchResult[] };
-  console.log(result);
+    .execute() as { resources: SearchResult[]};
+    console.log(result);
   return (
     <section>
       <div className='flex flex-col gap-8'>
