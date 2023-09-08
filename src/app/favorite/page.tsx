@@ -1,6 +1,5 @@
 import cloudinary from 'cloudinary'
-import Upload from './upload'
-import View from './view';
+import View from '../gallery/view';
 interface SearchResult {
   public_id: string;
   tags: string[];
@@ -9,7 +8,7 @@ interface SearchResult {
 export default async function GalleryPage() {
   const result = (
     await cloudinary.v2.search
-      .expression('resource_type:image')
+      .expression('resource_type:image AND tags=favorite')
       .sort_by('public_id', 'desc')
       .max_results(7)
       .with_field("tags")
@@ -20,9 +19,8 @@ export default async function GalleryPage() {
       <div className='flex flex-col gap-8'>
         <div className='flex justify-between items-center'>
           <h2 className='text-4xl font-bold'>
-            Gallery
+            Favorites
           </h2>
-          <Upload />
         </div>
         <div className='columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4 mx-auto'>
           {
