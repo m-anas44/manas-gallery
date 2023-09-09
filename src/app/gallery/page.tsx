@@ -11,7 +11,7 @@ export default async function GalleryPage() {
     await cloudinary.v2.search
       .expression('resource_type:image')
       .sort_by('public_id', 'desc')
-      .max_results(7)
+      // .max_results(7)
       .with_field("tags")
       .execute()
   ) as { resources: SearchResult[] }

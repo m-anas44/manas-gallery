@@ -1,6 +1,6 @@
 import cloudinary from 'cloudinary'
-import View from '../gallery/view';
-interface SearchResult {
+import FavoriteList from './favoriteList';
+export interface SearchResult {
   public_id: string;
   tags: string[];
 }
@@ -10,7 +10,7 @@ export default async function GalleryPage() {
     await cloudinary.v2.search
       .expression('resource_type:image AND tags=favorite')
       .sort_by('public_id', 'desc')
-      .max_results(7)
+      // .max_results(7)
       .with_field("tags")
       .execute()
   ) as { resources: SearchResult[] }
@@ -22,15 +22,7 @@ export default async function GalleryPage() {
             Favorites
           </h2>
         </div>
-        <div className='columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4 mx-auto'>
-          {
-            result.resources.map((item, index) => {
-              return <div key={index} className='break-inside-avoid'>
-                <View src={item.public_id} tag={item.tags} />
-              </div>
-            })
-          }
-        </div>
+        <FavoriteList resources={result.resources}/>
       </div>
     </section>
   )
