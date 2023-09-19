@@ -5,7 +5,6 @@ import { BiEdit, BiSolidImageAdd } from "react-icons/bi"
 import { AddTags } from "./actions";
 import { useState } from "react";
 import Link from "next/link";
-import DialogBox from "./dialogBox";
 const View = ({ src, tag }: { src: string, tag: string[] }) => {
     const [fav, setFav] = useState(tag.includes("favorite"))
     return (
@@ -36,9 +35,6 @@ const View = ({ src, tag }: { src: string, tag: string[] }) => {
                     <BiEdit className="text-3xl bg-white 
                     bg-opacity-75 rounded p-1  cursor-pointer"/>
                 </Link>
-            </div>
-            <div className="absolute bottom-0 left-1">
-                <DialogBox imageData={src}/>
             </div>
         </div>
     )

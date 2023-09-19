@@ -27,9 +27,8 @@ const View = ({ src, tag, fun }: { src: string, tag: string[], fun?: any }) => {
                         (<AiOutlineHeart className="text-4xl bg-white 
                     bg-opacity-75 rounded  p-1 hover:text-red-500 text-black cursor-pointer"/>)
                 }
-
-
             </div>
+            
         </div>
     )
 }

@@ -17,7 +17,7 @@ export default async function GalleryPage() {
   return (
     <section>
       <div className='flex flex-col gap-8'>
-        <div className='flex justify-between items-center'>
+        <div>
           <h2 className='text-4xl font-bold'>
             Favorites
           </h2>
