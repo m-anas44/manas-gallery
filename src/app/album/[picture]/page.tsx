@@ -20,7 +20,7 @@ export default async function Page({ params }: { params: { picture: string } }) 
       <div className='flex flex-col gap-8'>
 
         <h2 className='text-4xl font-bold'>
-          {`Album Name:   ${params.picture}`}
+          {`${params.picture} Album`}
         </h2>
 
         <div className='columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4 mx-auto'>
