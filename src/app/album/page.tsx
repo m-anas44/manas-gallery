@@ -6,7 +6,7 @@ export interface folderType {
     name: string,
     path: string,
 }
-const Page = async () => {
+export default async function Page() {
     const { folders } = (await cloudinary.v2.api.root_folders()) as {
         folders: folderType[];
     }
@@ -33,5 +33,3 @@ const Page = async () => {
         </div>
     )
 }
-
-export default Page
