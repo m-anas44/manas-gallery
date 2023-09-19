@@ -16,7 +16,7 @@ const AlbumList = ({ folders }: { folders: folderType }) => {
             <Card className="w-[340px]">
                 <CardHeader>
                     <CardTitle>{folders.name}</CardTitle>
-                    <CardDescription>Click to open your added album. See what's in your {`${folders.name}`} album</CardDescription>
+                    <CardDescription>Click to open your added album. See what is in your {`${folders.name}`} album</CardDescription>
                 </CardHeader>
                 <CardFooter className="flex justify-end">
                     <Link href={`/album/${folders.name}`}>
