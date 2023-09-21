@@ -1,5 +1,5 @@
 import cloudinary from 'cloudinary'
-import View from './view';
+import View from '../view';
 interface SearchResult {
   public_id: string;
   tags: string[];

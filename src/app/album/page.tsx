@@ -1,7 +1,7 @@
 import cloudinary from 'cloudinary'
 import AlbumList from './albumList';
 
-interface folderType {
+export interface folderType {
     name: string,
     path: string,
 }
