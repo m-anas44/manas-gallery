@@ -1,7 +1,7 @@
 import cloudinary from 'cloudinary'
-import AlbumList from '../../components/albumList';
+import AlbumList from './albumList';
 
-export interface folderType {
+interface folderType {
     name: string,
     path: string,
 }
