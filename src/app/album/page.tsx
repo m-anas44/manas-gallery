@@ -1,5 +1,5 @@
 import cloudinary from 'cloudinary'
-import AlbumList from './albumList';
+import AlbumList from '../../components/albumList';
 
 export interface folderType {
     name: string,

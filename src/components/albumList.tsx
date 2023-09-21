@@ -7,7 +7,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import { folderType } from './page'
+import { folderType } from '../app/album/page'
 import Link from 'next/link'
 const AlbumList = ({ folders }: { folders: folderType }) => {
     return (
