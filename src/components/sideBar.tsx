@@ -6,12 +6,12 @@ import Heart from './heart'
 const SideBar = () => {
     return (
 
-        <div className="pb-12 sm:w-1/4 w-full sm:border-r">
-                <div className="py-2 flex sm:flex-col justify-start w-full flex-grow items-center sm:items-stretch">
-                    <h2 className="sm:mb-2 px-4 text-lg font-bold tracking-tight sm:border-r-0 border-r">
+        <div className="pb-12 absolute md:static min-h-screen md:w-1/5 bg-slate-300 border-r">
+                <div className="py-2 justify-start w-full flex-grow items-center sm:items-stretch">
+                    <h2 className="mb-2 px-4 text-lg font-bold tracking-tight">
                         Manage
                     </h2>
-                    <div className="flex sm:flex-col items-center flex-grow">
+                    <div>
                         <Link href={"/gallery"} className='w-full'>
                             <Button variant="secondary" className="w-full justify-start hover:bg-gray-200 gap-x-1 font-bold rounded">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
