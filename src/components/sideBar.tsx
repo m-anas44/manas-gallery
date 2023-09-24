@@ -6,7 +6,7 @@ import Heart from './heart'
 const SideBar = () => {
     return (
 
-        <div className="pb-12 absolute md:static min-h-screen md:w-1/5 bg-slate-300 border-r">
+        <div className="pb-12 w-full min-h-screen md:w-1/5 bg-slate-300 border-r">
                 <div className="py-2 justify-start w-full flex-grow items-center sm:items-stretch">
                     <h2 className="mb-2 px-4 text-lg font-bold tracking-tight">
                         Manage
