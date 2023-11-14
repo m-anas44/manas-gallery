@@ -6,10 +6,11 @@ import Heart from './heart'
 const SideBar = () => {
     return (
 
-        <div className="pb-12 w-full min-h-screen md:w-1/5 bg-slate-300 border-r">
+        <div className="pb-12 w-1/2 md:w-full min-h-screen bg-slate-100 border-r border-gray-900">
                 <div className="py-2 justify-start w-full flex-grow items-center sm:items-stretch">
-                    <h2 className="mb-2 px-4 text-lg font-bold tracking-tight">
-                        Manage
+                    <h2 className="mb-2 px-4 text-sm md:text-lg font-semibold tracking-tight">
+                        Manage <br />
+                        <hr className='border border-gray-900' />
                     </h2>
                     <div>
                         <Link href={"/gallery"} className='w-full'>

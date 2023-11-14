@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import { CldImage } from 'next-cloudinary';
 import { CldUploadButton } from 'next-cloudinary';
+import image from "/public/image.jpg"
+import Image from 'next/image';
 
 interface UploadImage {
   event: "success";
@@ -14,53 +16,11 @@ export default function Home() {
   const [imageId, setImageId] = useState("")
   return (
     <div>
-      <CldUploadButton
+      <Image src={image} alt="image" className='min-w-full'/>
+      {/* <CldUploadButton
         onUpload={(result: any) => setImageId(result.info.public_id)}
         uploadPreset="g7hq9orw" />
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
-<h1>This</h1>
+
       {
         imageId && (
           <CldImage
@@ -71,7 +31,7 @@ export default function Home() {
             alt="Description of my image"
           />
         )
-      }
+      } */}
     </div>
   )
 }

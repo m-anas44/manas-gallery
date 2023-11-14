@@ -19,7 +19,7 @@ const Res_sidebar = () => {
             </h2>
             </div>
             
-            <div className={`fixed md:static top-0 z-50 ${openSideBar?'block':'hidden md:block'}`}>
+            <div className={`fixed md:static z-50 ${openSideBar?'block':'hidden md:block'}`}>
             <SideBar />
             </div>
         </div>
